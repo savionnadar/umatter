@@ -849,11 +849,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .page-content {
-    width: 95%;
-    height: 95%;
-  }
-
   .hero-description {
     font-size: 1.1rem;
   }
