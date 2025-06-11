@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U Matter - Mental Wellbeing | Don Bosco International School</title>
+    <link rel="icon" href="logo.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tools.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <!-- <div id="loading-screen" class="loading-screen">
+      <div class="loading-content">
+        <div class="loading-logo">
+          <img src="logo.svg" alt="" />
+        </div>
+        <p class="loading-quote">
+          "Emotional balance is an indispensable life skill that transcends
+          academic achievement." - WHO
+        </p>
+        <div class="loading-spinner"></div>
+      </div>
+    </div> -->
+
+    <!-- Main Container -->
+    <div id="main-container" class="main-container">
+      <!-- Animated Background -->
+      <div class="background-gradients">
+        <div class="gradient-blob blob-1"></div>
+        <div class="gradient-blob blob-2"></div>
+        <div class="gradient-blob blob-3"></div>
+        <div class="gradient-blob blob-4"></div>
+        <div class="gradient-blob blob-5"></div>
+      </div>
+
+      <!-- Horizontal Scroll Container -->
+      <div class="horizontal-container" id="horizontal-container">
+        <!-- Page 1: Welcome -->
+        <section class="page" id="page-1">
+          <div class="page-content">
+            <div class="hero-section">
+              <h1 class="hero-title">
+                <span class="salus-text">You Matter</span>
+              </h1>
+              <p class="hero-subtitle">
+                A safe space for students to reflect, connect, and grow...
+              </p>
+              <div class="hero-description">
+                <p>
+                  Your mental health journey matters. We're here to support,
+                  guide, and empower every student towards a healthier, happier
+                  mindset.
+                </p>
+              </div>
+              <button class="glass-button primary-btn">
+                <span>Begin Your Journey</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Page 2: About -->
+        <section class="page" id="page-2">
+          <div class="page-content scrollable">
+            <div class="content-grid">
+              <div class="glass-card" data-card="stress-relief">
+                <div class="card-icon"></div>
+                <h3>7 Day Stress Relief Challenge</h3>
+                <p>
+                  An uplifting 7 day refresh to begin your mental health
+                  journey.
+                </p>
+              </div>
+              <div class="glass-card" data-card="self-care">
+                <div class="card-icon"></div>
+                <h3>Building a Personalized Self-care Routine</h3>
+                <p>
+                  A simple guide to help you identify and implement best
+                  practices, boosting your mental wellbeing.
+                </p>
+              </div>
+              <div class="glass-card" data-card="growth-mindset">
+                <div class="card-icon"></div>
+                <h3>Attaining a Growth Mindset</h3>
+                <p>
+                  Fostering resilience and personal growth through mindfulness,
+                  encourages you to see challenges as opportunities to learn
+                </p>
+              </div>
+              <div class="glass-card" data-card="time-management">
+                <div class="card-icon"></div>
+                <h3>The Ultimate Time-management Toolkit</h3>
+                <p>
+                  A comprehensive toolkit to help you manage your time
+                  effectively and reduce stress related to deadlines and
+                  responsibilities.
+                </p>
+              </div>
+              <div class="glass-card" data-card="social-anxiety">
+                <div class="card-icon"></div>
+                <h3>Overcoming Social Anxiety</h3>
+                <p>
+                  A set of strategies for one who experience social anxiety,
+                  offering practical tips for overcoming fear and gaining
+                  confidence.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Page 3: Resources -->
+        <section class="page" id="page-3">
+          <div class="page-content scrollable">
+            <div class="resource-grid">
+              <div class="resource-section breathe">
+                <h3 class="resource-title">Breathe</h3>
+                <div class="resource-items">
+                  <div class="breathing-area">
+                    <div
+                      class="gradient-animation"
+                      id="gradientAnimation"
+                    ></div>
+                    <div class="timer-content">
+                      <div class="timer-display" id="timerDisplay">2:00</div>
+                      <div class="phase-text" id="phaseText">
+                        Choose your session length
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="controls-section">
+                    <button class="play-pause-btn" id="playPauseBtn">
+                      <div class="play-icon">▶</div>
+                      <div class="pause-icon">⏸</div>
+                    </button>
+
+                    <div class="presets">
+                      <button
+                        class="glass-button resource-btn active"
+                        data-minutes="2"
+                      >
+                        2 min
+                      </button>
+                      <button
+                        class="glass-button resource-btn"
+                        data-minutes="5"
+                      >
+                        5 min
+                      </button>
+                      <button
+                        class="glass-button resource-btn"
+                        data-minutes="10"
+                      >
+                        10 min
+                      </button>
+                      <button
+                        class="glass-button resource-btn"
+                        data-minutes="15"
+                      >
+                        15 min
+                      </button>
+                      <button
+                        class="glass-button resource-btn"
+                        data-minutes="20"
+                      >
+                        20 min
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- <div class="resource-section">
+                <h3 class="resource-title">Applications</h3>
+                <div class="resource-items">
+                  <button class="glass-button resource-btn">
+                    <span>Calm</span>
+                  </button>
+                  <button class="glass-button resource-btn">
+                    <span>Insight Timer</span>
+                  </button>
+                  <button class="glass-button resource-btn">
+                    <span>10% Happier</span>
+                  </button>
+                  <button class="glass-button resource-btn">
+                    <span>Moodfit</span>
+                  </button>
+                  <button class="glass-button resource-btn">
+                    <span>Sleep Cycle</span>
+                  </button>
+                  <button class="glass-button resource-btn">
+                    <span>Breethe</span>
+                  </button>
+                  <button class="glass-button resource-btn">
+                    <span>Streaks (iOS)</span>
+                  </button>
+                  <button class="glass-button resource-btn">
+                    <span>Habitica</span>
+                  </button>
+                  <button class="glass-button resource-btn">
+                    <span>Head Space</span>
+                  </button>
+                  <button class="glass-button resource-btn">
+                    <span>Balance (iOS)</span>
+                  </button>
+                  <button class="glass-button resource-btn">
+                    <span>How We Feel (iOS)</span>
+                  </button>
+                  <button class="glass-button resource-btn">
+                    <span>Smiling Mind</span>
+                  </button>
+                  <button class="glass-button resource-btn">
+                    <span>Daylio</span>
+                  </button>
+                  <button class="glass-button resource-btn">
+                    <span>Flora or Forest</span>
+                  </button>
+                </div>
+              </div>
+              <div class="resource-section">
+                <h3 class="resource-title">Educational Content</h3>
+                <div class="resource-items">
+                  <button class="glass-button resource-btn">
+                    <span>Mental Health Basics</span>
+                  </button>
+                  <button class="glass-button resource-btn">
+                    <span>Stress Management</span>
+                  </button>
+                  <button class="glass-button resource-btn">
+                    <span>Building Resilience</span>
+                  </button>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </section>
+
+        <!-- Page 4: Get Help -->
+        <section class="page" id="page-4">
+          <div class="page-content">
+            <div class="help-options">
+              <div class="help-card glass-card large">
+                <h3>School Counselor</h3>
+                <p>
+                  Our trained school counselors are available for one-on-one
+                  sessions, group therapy, and crisis intervention.
+                </p>
+                <div class="help-details">
+                  <span>📞 Available: Mon-Fri, 8AM-5PM</span>
+                  <span>📧 counselor@dbis.edu</span>
+                </div>
+                <button class="glass-button">
+                  <span>Book Appointment</span>
+                </button>
+              </div>
+
+              <div class="help-card glass-card large">
+                <h3>External Therapists</h3>
+                <p>
+                  Access to a network of qualified external mental health
+                  professionals for specialized care.
+                </p>
+                <div class="help-details">
+                  <span>🏥 Partner Clinics Available</span>
+                  <span>💳 Insurance Accepted</span>
+                </div>
+                <button class="glass-button">
+                  <span>Find Therapist</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Page 5: Contact -->
+        <section class="page" id="page-5">
+          <div class="page-content">
+            <div class="section-header">
+              <h2 class="section-title">Contact Us</h2>
+              <p class="section-subtitle">
+                We're here to listen and support you
+              </p>
+            </div>
+
+            <div class="contact-container">
+              <div class="contact-info">
+                <div class="contact-item">
+                  <div class="contact-icon">📧</div>
+                  <div class="contact-details">
+                    <h4>Email Support</h4>
+                    <p>salus@dbis.edu</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">📞</div>
+                  <div class="contact-details">
+                    <h4>Phone Support</h4>
+                    <p>+91 98765 43210</p>
+                  </div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-icon">🏫</div>
+                  <div class="contact-details">
+                    <h4>Visit Us</h4>
+                    <p>
+                      Don Bosco International School<br />Mental Wellness Center
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contact-form glass-card">
+                <h3>Send us a message</h3>
+                <form>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      placeholder="Your Name"
+                      class="glass-input"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="email"
+                      placeholder="Your Email"
+                      class="glass-input"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      placeholder="Your Message"
+                      class="glass-input"
+                      rows="4"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="glass-button primary-btn">
+                    <span>Send Message</span>
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Navigation Pills -->
+      <nav class="nav-pills">
+        <div class="nav-pill active" data-page="1">
+          <span class="nav-dot"></span>
+          <span class="nav-label">Home</span>
+        </div>
+        <div class="nav-pill" data-page="2">
+          <span class="nav-dot"></span>
+          <span class="nav-label">Learn</span>
+        </div>
+        <div class="nav-pill" data-page="3">
+          <span class="nav-dot"></span>
+          <span class="nav-label">Tools</span>
+        </div>
+        <div class="nav-pill" data-page="4">
+          <span class="nav-dot"></span>
+          <span class="nav-label">Connect</span>
+        </div>
+        <div class="nav-pill" data-page="5">
+          <span class="nav-dot"></span>
+          <span class="nav-label">FAQ's</span>
+        </div>
+      </nav>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="learn.js"></script>
+    <script src="tools.js"></script>
+  </body>
+</html>
