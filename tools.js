@@ -23,7 +23,7 @@ class BreathingExercise {
 
   initEventListeners() {
     // Preset buttons
-    document.querySelectorAll(".resource-btn").forEach((btn) => {
+    document.querySelectorAll(".preset-btn").forEach((btn) => {
       btn.addEventListener("click", (e) => {
         if (!this.isRunning) {
           this.selectPreset(parseInt(e.target.dataset.minutes));
@@ -47,7 +47,7 @@ class BreathingExercise {
     this.remainingSeconds = this.totalSeconds;
 
     // Update active preset button
-    document.querySelectorAll(".resource-btn").forEach((btn) => {
+    document.querySelectorAll(".preset-btn").forEach((btn) => {
       btn.classList.remove("active");
     });
     document
@@ -63,7 +63,7 @@ class BreathingExercise {
     playPauseBtn.classList.add("playing");
 
     // Disable preset buttons during exercise
-    document.querySelectorAll(".resource-btn").forEach((btn) => {
+    document.querySelectorAll(".preset-btn").forEach((btn) => {
       btn.disabled = true;
     });
 
@@ -77,7 +77,7 @@ class BreathingExercise {
     playPauseBtn.classList.remove("playing");
 
     // Enable preset buttons
-    document.querySelectorAll(".resource-btn").forEach((btn) => {
+    document.querySelectorAll(".preset-btn").forEach((btn) => {
       btn.disabled = false;
     });
 
