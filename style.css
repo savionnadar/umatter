@@ -245,9 +245,10 @@ body {
   width: 100vw;
   height: 100vh;
   padding: 2rem;
+  margin-right: 2rem;
   overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   position: relative;
 }
@@ -260,6 +261,7 @@ body {
   align-items: start;
   display: flex;
   z-index: 3;
+  overflow-y: scroll;
 }
 
 .scrollable {
