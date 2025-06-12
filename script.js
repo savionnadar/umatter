@@ -138,11 +138,18 @@ function handleTouchEnd(e) {
     } else if (deltaX < 0 && currentPage > 1) {
       navigateToPage(currentPage - 1);
     }
+
+    // ✅ Force re-apply transform to ensure snapping on mobile
+    setTimeout(() => {
+      const translateX = (currentPage - 1) * -100;
+      horizontalContainer.style.transform = `translateX(${translateX}vw)`;
+    }, 0);
   }
 
   touchStartX = 0;
   touchStartY = 0;
 }
+
 
 // Keyboard navigation
 function handleKeyNavigation(e) {
@@ -179,7 +186,6 @@ function navigateToPage(targetPage) {
   isScrolling = true;
 
   // Update current page
-  const previousPage = currentPage;
   currentPage = targetPage;
 
   // Update navigation pills
