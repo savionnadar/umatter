@@ -257,7 +257,7 @@ body {
   height: 90%;
   position: relative;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   display: flex;
   z-index: 3;
 }
