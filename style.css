@@ -45,15 +45,18 @@ body {
   width: 65vw;
   max-width: 600px;
   height: 60vh;
+  max-height: 800px;
   background: linear-gradient(135deg, #ffd651 0%, #1f74b4 100%);
   flex-direction: column;
   color: white;
   border-radius: 35px;
-  padding: 0 2rem 0 2rem;
+  padding: 2rem;
   animation: fadeInUp 1.2s ease;
   justify-content: space-evenly;
-  height: 50vh;
-  width: 60vw;
+}
+
+.loading-content > * {
+  margin-top: 0.5rem;
 }
 
 .loading-logo {
