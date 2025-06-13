@@ -317,7 +317,7 @@
 
         <!-- Page 5: FAQ's -->
         <section class="page scrollable" id="page-5">
-          <div class="page-content">
+          <div class="page-content scrollable">
             <!-- <div class="section-header">
               <h2 class="section-title">Contact Us</h2>
               <p class="section-subtitle">
@@ -353,16 +353,96 @@
                   </div>
                 </div>
               </div> -->
-              <div class="hero-section">
-                <h1 class="hero-title">
-                  <span class="salus-text">FAQ's</span>
-                </h1>
-                <p class="hero-subtitle">
-                  Frequently asked questions coming soon...
-                </p>
+              <div class="resource-section scrollable">
+                  <h1 class="resource-title">FAQ's</h1>
+                  <div class="resource-items">
+                      <div class="faq-item">
+                          <button class="faq-question" onclick="toggleFAQ(this)">
+                              <div class="question-text">What should I do if I'm feeling overwhelmed by stress or anxiety?</div>
+                              <div class="faq-icon"><i class="fa-solid fa-caret-down"></i></div>
+                          </button>
+                          <div class="faq-answer">
+                              <div class="faq-answer-content">
+                                  Feeling overwhelmed is common, especially during stressful times. Start by taking a few deep breaths to calm your mind. Break down tasks into smaller steps and focus on one thing at a time. It's also helpful to talk to someone you trust, like a friend, family member, or counselor. If you're consistently feeling overwhelmed, reaching out for professional support can make a huge difference.
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="faq-item">
+                          <button class="faq-question" onclick="toggleFAQ(this)">
+                              <div class="question-text">How do I know if I need to see a counselor or therapist?</div>
+                              <div class="faq-icon"><i class="fa-solid fa-caret-down"></i></div>
+                          </button>
+                          <div class="faq-answer">
+                              <div class="faq-answer-content">
+                                  If you're feeling consistently sad, anxious, or hopeless, or if you find it hard to function day-to-day (whether academically, socially, or emotionally), speaking with a counselor can help. Therapy is not just for crises - it's for anyone who wants to explore and improve their mental health. It's okay to ask for help when you need it.
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="faq-item">
+                          <button class="faq-question" onclick="toggleFAQ(this)">
+                              <div class="question-text">Is it normal to feel anxious before an exam or presentation?</div>
+                              <div class="faq-icon"><i class="fa-solid fa-caret-down"></i></div>
+                          </button>
+                          <div class="faq-answer">
+                              <div class="faq-answer-content">
+                                  Yes, it's completely normal to feel anxious or nervous before important events. A little anxiety can be motivating and help you focus. However, if your anxiety becomes overwhelming or interferes with your ability to prepare, it's important to practice stress-relief techniques, like deep breathing, or seek additional support from a counselor.
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="faq-item">
+                          <button class="faq-question" onclick="toggleFAQ(this)">
+                              <div class="question-text">How can I balance school, social life, and self-care without feeling burned out?</div>
+                              <div class="faq-icon"><i class="fa-solid fa-caret-down"></i></div>
+                          </button>
+                          <div class="faq-answer">
+                              <div class="faq-answer-content">
+                                  Time management is key. Create a balanced schedule that includes study time, social activities, and self-care. Prioritize your tasks and set boundaries to protect your time. Don't hesitate to say "no" when necessary to avoid over-committing. Remember that self-care isn't selfish - it's essential for maintaining long-term productivity and well-being.
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="faq-item">
+                          <button class="faq-question" onclick="toggleFAQ(this)">
+                              <div class="question-text">How can I support a friend who is struggling with their mental health?</div>
+                              <div class="faq-icon"><i class="fa-solid fa-caret-down"></i></div>
+                          </button>
+                          <div class="faq-answer">
+                              <div class="faq-answer-content">
+                                  Be a good listener and offer your support without judgment. Encourage them to reach out for professional help if they haven't already. Sometimes, just being there for them and letting them know they're not alone can make a big difference. However, it's important to remember that you aren't a therapist, and professional help may be needed if the situation worsens.
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="faq-item">
+                          <button class="faq-question" onclick="toggleFAQ(this)">
+                              <div class="question-text">Will my information be kept confidential if I talk to a counselor?</div>
+                              <div class="faq-icon"><i class="fa-solid fa-caret-down"></i></div>
+                          </button>
+                          <div class="faq-answer">
+                              <div class="faq-answer-content">
+                                  Yes, counselors are committed to keeping your information confidential. They can only share details if there's a risk of harm to you or others, but otherwise, everything you discuss will remain private. If you have concerns, feel free to ask your counselor about their confidentiality policy before starting the session.
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="faq-item">
+                          <button class="faq-question" onclick="toggleFAQ(this)">
+                              <div class="question-text">Can I still seek help if I don't have a mental health diagnosis?</div>
+                              <div class="faq-icon"><i class="fa-solid fa-caret-down"></i></div>
+                          </button>
+                          <div class="faq-answer">
+                              <div class="faq-answer-content">
+                                  Absolutely! You don't need a diagnosis to benefit from mental health support. Therapy and counseling are valuable for anyone looking to improve their mental well-being, whether you're dealing with a specific issue or simply want to manage stress, build resilience, or work on personal growth.
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
 
-              <!-- <div class="contact-form glass-card">
+              <div class="contact-form glass-card">
                 <h3>Send us a message</h3>
                 <form>
                   <div class="form-group">
@@ -390,7 +470,7 @@
                     <span>Send Message</span>
                   </button>
                 </form>
-              </div> -->
+              </div>
             </div>
           </div>
         </section>
@@ -423,6 +503,7 @@
 
     <script src="./scripts/script.js"></script>
     <script src="./scripts/learn.js"></script>
+    <script src="./scripts/faqs.js"></script>
     <script src="./scripts/tools.js"></script>
     <script src="https://kit.fontawesome.com/69fd6beb52.js" crossorigin="anonymous"></script>
   </body>
