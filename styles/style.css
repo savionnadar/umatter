@@ -251,7 +251,7 @@ body {
   margin-right: 2rem;
   overflow: hidden;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   position: relative;
 }
@@ -261,10 +261,11 @@ body {
   height: 90%;
   position: relative;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   display: flex;
   z-index: 3;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .scrollable {
@@ -536,24 +537,141 @@ body {
 }
 
 .hero-title {
-  font-size: clamp(4rem, 8vw, 8rem);
-  font-weight: 800;
-  margin-bottom: 1rem;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title h1 {
   color: #1e6091;
   -webkit-background-clip: text;
   background-clip: text;
   animation: titleGlow 3s ease-in-out infinite alternate;
 }
 
-.salus-text {
-  position: relative;
-  cursor: pointer;
-  transition: all 0.3s ease;
+.hero-title img {
+  width: 15vw;
+  max-width: 150px;
+  height: 15vw;
+  max-height: 150px;
+  margin-bottom: 1.5rem;
+  margin-right: 1rem;
 }
 
-.salus-text:hover {
-  text-shadow: 0 0 30px rgba(212, 175, 55, 0.5);
-  transform: scale(1.05);
+.salus-text {
+  font-size: clamp(5rem, 13vw, 10rem);
+  font-weight: 600;
+  color: #1e6091;
+  animation: fadeInUp 1s ease 0.5s both;
+  top: 3vw;
+}
+
+.title-text {
+  letter-spacing: 0.05em;
+  background: linear-gradient(
+    45deg,
+    #ce8d00,
+    #d8a600,
+    #ffa639,
+    #1674af,
+    #1983c0,
+    #1978ac,
+    #3b8fbd,
+    #0873a8,
+    #c98a46,
+    #1e7db8,
+    #d89400,
+    #2a8bc4
+  );
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  animation: meshGradient 32s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
+}
+
+@keyframes meshGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  13% {
+    background-position: 60% 25%;
+  }
+  25% {
+    background-position: 100% 0%;
+  }
+  37% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  62% {
+    background-position: 60% 75%;
+  }
+  75% {
+    background-position: 0% 100%;
+  }
+  87% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes meshGradient2 {
+  0% {
+    background-position: 0% 0%;
+    opacity: 0.7;
+  }
+  16% {
+    background-position: 60% 60%;
+    opacity: 0.5;
+  }
+  33% {
+    background-position: 100% 100%;
+    opacity: 0.4;
+  }
+  50% {
+    background-position: 50% 100%;
+    opacity: 0.3;
+  }
+  66% {
+    background-position: 0% 100%;
+    opacity: 0.8;
+  }
+  83% {
+    background-position: 0% 60%;
+    opacity: 0.6;
+  }
+  100% {
+    background-position: 0% 0%;
+    opacity: 0.7;
+  }
+}
+
+@keyframes meshGradient3 {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Glow effect */
+.title-text {
+  filter: drop-shadow(0 0 20px rgba(212, 165, 116, 0.3))
+    drop-shadow(0 0 40px rgba(30, 125, 184, 0.2))
+    drop-shadow(0 0 60px rgba(230, 184, 133, 0.1));
 }
 
 .hero-subtitle {
