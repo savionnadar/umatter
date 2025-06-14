@@ -17,6 +17,28 @@ body {
   line-height: 1.6;
 }
 
+.logo-container {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+  top: 0;
+  right: 0;
+}
+
+.dblogo {
+  width: 35vw;
+  max-width: 300px;
+  max-height: 150px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 25px;
+  top: 2vh;
+  right: 2vh;
+}
+
 .hidden {
   opacity: 0;
   pointer-events: none;
@@ -368,7 +390,7 @@ body {
 
 /* Expanded Card */
 .expanded-card {
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.801);
   backdrop-filter: blur(30px);
   border: 1px solid rgba(212, 175, 55, 0.3);
   border-radius: 25px;
@@ -551,20 +573,25 @@ body {
 }
 
 .hero-title img {
-  width: 15vw;
-  max-width: 150px;
-  height: 15vw;
-  max-height: 150px;
-  margin-bottom: 1.5rem;
+  width: 12vh;
+  max-width: 13vw;
+  height: 12vh;
+  max-height: 13vw;
+  margin-bottom: 3vh;
   margin-right: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .salus-text {
-  font-size: clamp(5rem, 13vw, 10rem);
+  font-size: clamp(3rem, 13vw, 10rem);
   font-weight: 600;
   color: #1e6091;
   animation: fadeInUp 1s ease 0.5s both;
   top: 3vw;
+}
+
+.ud {
+  font-size: clamp(2rem, 10vw, 6rem);
 }
 
 .title-text {
