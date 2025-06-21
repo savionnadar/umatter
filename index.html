@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
   </head>
   <body>
     <!-- Loading Screen -->
@@ -38,6 +39,8 @@
         <div class="gradient-blob blob-4"></div>
         <div class="gradient-blob blob-5"></div>
       </div>
+
+      <!-- DBIS Logo -->
       <div class="logo-container dblogo-container ">
         <img src="dbis-logo.png" class="dblogo" alt="Don Bosco International School Logo" />
       </div>
@@ -270,7 +273,7 @@
         </section>
 
         <!-- Page 4: Connect -->
-        <section class="page scrollable" id="page-4">
+        <section class="page" id="page-4">
           <!-- <div class="page-content">
             <div class="help-options">
               <div class="help-card glass-card large">
@@ -304,7 +307,7 @@
               </div>
             </div>
           </div> -->
-          <div class="hero-section">
+          <!-- <div class="hero-section">
             <h1 class="hero-title">
               <span class="title-text ud">Under Development</span>
             </h1>
@@ -318,6 +321,44 @@
                 <a href="https://savion-flow.netlify.app/">Infinite Chat</a> for a similar experience.
               </p>
             </div>
+          </div> -->
+          <!-- <iframe src="https://savion-flow.netlify.app/" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation allow-downloads"></iframe> -->
+          <div class="page-content">
+            <!-- <iframe src="https://cdn.botpress.cloud/webchat/v3.0/shareable.html?configUrl=https://files.bpcontent.cloud/2025/06/21/02/20250621021144-75RPYU45.json" sandbox="allow-forms allow-modals allow-scripts"></iframe> -->
+             <!-- Put this on your page BEFORE the script below -->
+          <div id="webchat" style="width: 100%; height: 100%;"></div>
+          
+          <!-- In your <body> tag -->
+          <script>
+            window.botpress.on("webchat:ready", () => {
+              window.botpress.open();
+            });
+            window.botpress.init({
+            "botId": "42291027-a764-4ec6-bcab-d453fff64edd",
+            "configuration": {
+              "version": "v1",
+              "botName": "Salus",
+              "botAvatar": "https://files.bpcontent.cloud/2025/06/21/18/20250621182534-CO32EEB4.png",
+              "fabImage": "https://files.bpcontent.cloud/2025/06/21/18/20250621182534-CO32EEB4.png",
+              "website": {},
+              "email": {},
+              "phone": {},
+              "termsOfService": {},
+              "privacyPolicy": {},
+              "color": "#b7a700",
+              "variant": "solid",
+              "headerVariant": "glass",
+              "themeMode": "dark",
+              "fontFamily": "inter",
+              "radius": 4,
+              "feedbackEnabled": false,
+              "footer": "[⚡ by Botpress](https://botpress.com/?from=webchat)"
+            },
+            "clientId": "35f1d260-dd8b-4ba9-aa4a-f88b35b39807",
+            "selector": "#webchat"
+          });
+          </script>
+  
           </div>
         </section>
 
@@ -498,7 +539,7 @@
         </div>
         <div class="nav-pill" data-page="4">
           <span class="nav-dot"></span>
-          <span class="nav-label">Connect</span>
+          <span class="nav-label">Chat</span>
         </div>
         <div class="nav-pill" data-page="5">
           <span class="nav-dot"></span>

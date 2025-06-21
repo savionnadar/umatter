@@ -73,7 +73,7 @@ function handleWheelScroll(e) {
 
   // Check if we're in a scrollable area
   const scrollableElement = e.target.closest(".scrollable");
-  
+
   if (scrollableElement) {
     const { scrollTop, scrollHeight, clientHeight } = scrollableElement;
 
@@ -149,7 +149,6 @@ function handleTouchEnd(e) {
   touchStartX = 0;
   touchStartY = 0;
 }
-
 
 // Keyboard navigation
 function handleKeyNavigation(e) {
@@ -351,7 +350,7 @@ function initializeFormHandling() {
     setTimeout(() => {
       submitBtn.querySelector("span").textContent = originalText;
       submitBtn.disabled = false;
-      showNotification("Message sent successfully!", "success");
+      showNotification("Feedback system will be available soon!", "failed");
       this.reset();
     }, 2000);
   });
@@ -510,5 +509,3 @@ const lazyLoadObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll("[data-src]").forEach((element) => {
   lazyLoadObserver.observe(element);
 });
-
-console.log("Salus website initialized successfully! 🌟");
