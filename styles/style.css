@@ -1108,7 +1108,7 @@ body {
   opacity: 1;
 }
 
-/* Chat Application */
+/* Chat Application
 #webchat .bpWebchat {
   position: unset;
   width: 100%;
@@ -1131,4 +1131,4 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-}
+} */
