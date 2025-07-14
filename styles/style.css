@@ -23,12 +23,13 @@ body {
   justify-content: space-between;
   z-index: 99;
   top: 0;
-  right: 0;
+  left: 0;
 }
 
 .dblogo {
-  width: 35vw;
+  width: 15vw;
   max-width: 300px;
+  min-width: 150px;
   max-height: 150px;
   position: absolute;
   background: rgba(255, 255, 255, 0.7);
@@ -36,7 +37,7 @@ body {
   border: 1px solid rgba(212, 175, 55, 0.3);
   border-radius: 25px;
   top: 2vh;
-  right: 2vh;
+  left: 2vh;
 }
 
 .hidden {
